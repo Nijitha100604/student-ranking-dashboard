@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="icon" href="images/dashboard.png"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="admin.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!--top bar-->
+
+    <nav class="navbar">
+        <div class="side">
+            <div class="menu" onclick="shownavbar()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div>
+                <h1 class="head">Sort</h1>
+            </div>
+        </div>
+
+       <div class="navbar-settings">
+            <i class="fa-solid fa-right-from-bracket" onclick="showsignout()"></i>      
+        </div>
+    </nav>
+
+    <!--side nav bar-->
+
+    <div class="side-navbar">
+        <p style="text-align:right; color:black" onclick="closenavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+        <div class="navbar-links">
+            <p class="link"><a href="aHome.html">Home</a></p>
+            <p class="link"><a href="sort.html">Sort</a></p>
+            <p class="link"><a href="upload.html">Upload</a></p>
+        </div>
+
+   </div>
+
+   <!--signout bar-->
+
+   <div class="signout-bar">
+
+        <p>Sign Out</p>
+
+        <div class="signout-options">
+
+            <div class="yn"><p><a href="adminsign.html" style="text-decoration: none; color:black">Yes</a></p></div>
+            <div class="yn" onclick="closesignout()"><p>No</p></div>
+    
+        </div>
+
+    </div>
+
+    <!--sort form-->
+
+    <div class="s-form">
+        <table class="s-table">
+            <tbody>
+                <tr>
+                    <td>Batch</td>
+                    <td>
+                        <select>
+                            <option value="" disabled selected hidden>Choose Batch</option>
+                            <option>2021-2025</option>
+                            <option>2022-2026</option>
+                            <option>2023-2027</option>
+                            <option>2024-2028</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Departments</td>
+                    <td>
+                        <select>
+                            <option value="" disabled selected hidden>Choose Dept</option>
+                            <option>AIML</option>
+                            <option>AIDS</option>
+                            <option>AG</option>
+                            <option>BME</option>
+                            <option>CSE</option>
+                            <option>CSBS</option>
+                            <option>CD</option>
+                            <option>ECE</option>
+                            <option>EIE</option>
+                            <option>EEE</option>
+                            <option>FT</option>
+                            <option>FD</option>
+                            <option>TX</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Technical</td>
+                    <td>
+                        <select>
+                            <option value="" disabled selected hidden>Choose Tech</option>
+                            <option>C</option>
+                            <option>Java</option>
+                            <option>Data Structures</option>
+                            <option>Aptitude</option>
+                            <option>Electronics</option>
+                            <option>SQL</option>
+                        </select>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>Level</td>
+                    <td>
+                        <select>
+                            <option value="" disabled selected hidden>Choose level</option>
+                            <option>Level-1</option>
+                            <option>Level-2</option>
+                            <option>Level-3</option>
+                            <option>Level-4</option>
+                            <option>Level-5</option>
+                            <option>Level-6</option>
+                            <option>Level-7</option>
+                        </select>
+                    </td>
+                </tr>
+
+
+            </tbody>
+        </table>
+
+        <button class="add">+</button>
+
+        <button class="bt">Download</button>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+
+</html>

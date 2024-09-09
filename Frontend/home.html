@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="icon" href="images/dashboard.png"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="home.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <!--top bar-->
+
+    <nav class="navbar">
+        <div class="side">
+            <div class="menu" onclick="shownavbar()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div>
+                <h1 class="head">Dashboard</h1>
+            </div>
+        </div>
+
+       <div class="navbar-settings">
+            <i class="fa-solid fa-right-from-bracket" onclick="showsignout()"></i>      
+        </div>
+    </nav>
+
+
+    <!--side nav bar-->
+
+    <div class="side-navbar">
+        <p style="text-align:right; color:black" onclick="closenavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+        <div class="navbar-links">
+            <p class="link"><a href="home.html">Home</a></p>
+            <p class="link"><a href="ps.html">Personalized skill</a></p>
+            <p class="link"><a href="stack.html">Full stack</a></p>
+            <p class="link"><a href="hardware.html">Hardware Project</a></p>
+            <p class="link"><a href="activity.html">Placement activity</a></p>
+            <p class="link"><a href="ranks.html">Top Ranks</a></p>
+        </div>
+
+   </div>
+
+   <!--signout navbar-->
+
+   <div class="signout-bar">
+
+        <p>Sign Out</p>
+
+        <div class="signout-options">
+
+            <div class="yn"><p><a href="signin.html" style="text-decoration: none; color:black">Yes</a></p></div>
+            <div class="yn" onclick="closesignout()"><p>No</p></div>
+        
+        </div>
+
+   </div>
+
+    <!--top content-->
+
+    <div class="container">
+        
+        <div class="left-container">
+
+            <div class="heading">
+                <i class="fa-solid fa-user"></i>
+                <h4>PROFILE</h4>
+            </div>
+
+            <div class="left-profile">
+                <div class="profile">
+                    <img src="images/picture.jpg" width="150px" height="150px">
+                </div>
+
+                <div class="content">
+                    <p class="n">John M</p>
+                    <p class="n">Electronics and Communication Engineering</p>
+                    <p class="n">2022-2026 Batch</p>
+                    <p class="n">IT and Core</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right-container">
+            
+            <div class="points">
+                
+                <div class="rank">
+                    <div class="heading">
+                        <i class="fa-solid fa-ranking-star"></i>
+                        <h4>RANK</h4>
+                    </div> 
+                    <p>150/600</p>
+                </div>
+
+                <div class="rank">
+                    <div class="heading">
+                        <i class="fa-solid fa-star"></i>
+                        <h4>POINTS</h4>
+                    </div>
+                    <p>730</p>
+                </div>
+
+                <div class="rank">
+                    <div class="heading">
+                        <i class="fa-solid fa-circle-minus"></i>
+                        <h4>NEGATIVE</h4>
+                    </div>
+                    <P>0</P>
+                </div>
+
+            </div>
+
+            <div class="performance">
+                <div class="heading">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h4>OVERALL PERFORMANCE</h4>
+                </div>
+                <p>Need Improvement Aim for Dream Company</p>
+            </div>
+
+        </div>
+    </div>
+    
+    <!--bottom content-->
+
+    <div class="container">
+
+        <div class="left-container">
+            <div class="heading">
+                <i class="fa-solid fa-chart-simple"></i>
+                <h4>PERFORMANCE GRAPH</h4>
+            </div>
+            <div class="graph">
+                <img src="images/graph.png" width="450px" height="200px">
+            </div>
+        </div>
+
+        <div class="right-container">
+            <div class="heading">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h4>COMPANY DETAILS</h4>
+            </div>
+            <div class="companies">
+                <div class="details">
+                    <p>Companies Attended      :00</p>
+                    <p>Companies Not Attended  :00</p>
+                    <p>Total Offers            :00</p>
+                </div>
+
+                <div class="package">
+                    <div class="heading">
+                        <h4>Highest Package</h4>
+                    </div>
+                    <p>0</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="navbar.js"></script>
+
+</body>
+</html>
